@@ -7,6 +7,7 @@ Thank you for your interest in the role. We are delighted to invite your for an 
 The team that you will be working in provide GraphQL interfaces to consumers, providing valuable data on games and users to enable a great customer experience. What we are looking for you to do, is to test a scaled down version of one of our systems. We are looking for a lightweight and reusable test framework asserting that the data that is being requested is what we are expecting.
 
 You can do this in whatever language, tool or framework that you desire but we will be looking for:
+
 - Well structured code
 - High quality of code
 - Clear understanding of attributes and levels of abstraction that make up a good testing framework
@@ -26,6 +27,7 @@ You may add anything to your fork and enjoy!
 ### Tasks
 
 As mentioned above, the language, framework or tools that you use are not restricted. The only things we are looking for is:
+
 - A clear output of the tests that were run
 - A simple way of running the tests
 - Solid and comprehensive test coverage

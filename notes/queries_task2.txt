@@ -1,0 +1,64 @@
+
+Gets the current time and date of the query being run.
+{
+  now
+}
+
+
+Gets all games in the system.
+Logs show: Getting all games
+{
+  games {
+    id
+    name
+    slug
+    supplier {
+      id
+      name
+    }
+  }
+}
+
+
+Gets an individual game by the ID passed.
+The application has games 1-5.
+Logs show: Getting game with the ID 1
+{
+  game(id: 1) {
+    id
+    name
+    slug
+    supplier {
+      id
+      name
+    }
+  }
+}
+
+
+Gets an individual game bt the slug passed.
+The game slugs available are:
+random-game, lucky-pots, king-of-the-spins, jackpot-dropper, king-kane-cash.
+Logs show: Getting a game with the slug "random-game"
+{
+  gameBySlug(slug: "random-game") {
+    id
+    name
+    slug
+    supplier {
+      id
+      name
+    }
+  }
+}
+
+
+Gets all the suppliers in the system.
+The game suppliers available are: Greeny's Games, Miller's Millions.
+Logs show: Getting all suppliers
+{
+  suppliers {
+    id
+    name
+  }
+}

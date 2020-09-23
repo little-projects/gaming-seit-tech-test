@@ -1,0 +1,29 @@
+
+Adds a new game to the system.
+Notes: Slug can be "" but not a number, can also be 1000 chars long.
+mutation {
+  addGame(input: {name: "", slug: "", supplier: 1}) {
+    id
+    name
+    slug
+    supplier {
+      id
+      name
+    }
+  }
+}
+
+
+
+Updates the individual game by the ID passed.
+mutation {
+  updateGame(id: 1, input: {name: "", slug: "", supplier: 1}) {
+    id
+    name
+    slug
+    supplier {
+      id
+      name
+    }
+  }
+}
