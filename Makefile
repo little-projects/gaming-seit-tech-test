@@ -7,6 +7,9 @@ start:
 # name the app sbg-tech-test-app
 	docker start sbg-tech-test-app || docker run --publish $(APP_RUNNING_PORT):$(APP_RUNNING_PORT) -d --name sbg-tech-test-app $(APP_IMAGE)
 
+launch: start
+	open http://localhost:4000/graphql
+
 stop:
 	docker stop sbg-tech-test-app
 	docker rm sbg-tech-test-app
